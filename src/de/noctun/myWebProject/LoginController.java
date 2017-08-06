@@ -12,6 +12,8 @@ public class LoginController {
 	private String password;
 	private List<String> countries;
 	private String selectedCountrie;
+	private List<String> languages;
+	private String[] lang = { "java", "C#", "was auch immer" };
 	
 	public LoginController()
 	{
@@ -21,6 +23,13 @@ public class LoginController {
 		countries.add("Canada");
 		countries.add("France");
 		countries.add("Germany");
+		
+		languages = new ArrayList<String>();
+		languages.add("Java");
+		languages.add("C#");
+		languages.add("C++");
+		languages.add("Ruby");
+		
 	}
 
 	public String getUserName() {
@@ -53,6 +62,22 @@ public class LoginController {
 
 	public void setSelectedCountrie(String selectedCountrie) {
 		this.selectedCountrie = selectedCountrie;
+	}
+
+	public List<String> getLanguages() {
+		return languages;
+	}
+
+	public void setLanguages(List<String> languages) {
+		this.languages = languages;
+	}
+
+	public String[] getLang() {
+		return lang;
+	}
+
+	public void setLang(String[] lang) {
+		this.lang = lang;
 	}
 	
 	

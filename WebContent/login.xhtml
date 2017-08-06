@@ -23,6 +23,15 @@
 			<f:selectItems value="#{loginController.countries}"/>
 		</h:selectOneMenu>
 		<br/><br/>
+			
+	
+		<h:selectOneRadio >	
+			<f:selectItems value="#{loginController.languages}" var="tmp" itemValue="#{tmp}" itemLabel="#{tmp}" />
+			
+		</h:selectOneRadio>
+
+		
+		<br/><br/>
 		<h:commandButton value="Submit" action="myresponse" />
 	</h:form>
 	
