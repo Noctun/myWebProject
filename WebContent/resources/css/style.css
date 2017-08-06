@@ -1,0 +1,22 @@
+h1{
+	text-align: center;
+	color:olive;
+}
+
+.loginForm {
+	text-align:center;
+}
+.radio-inline label {
+
+	text-align: center;
+	color: fuchsia;
+	background-color: blue;
+	
+}
+
+.items label {
+	text-align: center;
+	margin: 20px;
+	color: #459aba;
+	background-color: #ff0000;
+}

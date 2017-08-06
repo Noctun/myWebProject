@@ -10,10 +10,11 @@
 <h:head>
 <title>MyWebProject - Login</title>
 </h:head>
-
+<h:outputStylesheet name="css/style.css" />
 <h:body>
 	<h1>Login Page</h1>
 	
+	<div class="loginForm">
 	<h:form>
 		<h:inputText id="name" value="#{loginController.userName}" a:placeholder="Username" />
 		<br/><br/>
@@ -24,16 +25,16 @@
 		</h:selectOneMenu>
 		<br/><br/>
 			
-	
-		<h:selectOneRadio >	
-			<f:selectItems value="#{loginController.languages}" var="tmp" itemValue="#{tmp}" itemLabel="#{tmp}" />
-			
+		<div class="radiobuttons">
+		<h:selectOneRadio styleClass="radio-inline">	
+			<f:selectItems styleClass="items" value="#{loginController.languages}" var="tmp" itemValue="#{tmp}" itemLabel="#{tmp}" />
 		</h:selectOneRadio>
-
-		
+		</div>
+		test
 		<br/><br/>
 		<h:commandButton value="Submit" action="myresponse" />
 	</h:form>
+	</div>
 	
 </h:body>
 
